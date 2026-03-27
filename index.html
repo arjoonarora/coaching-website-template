@@ -1,228 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduPeak — Premier Coaching Institute</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="edupeak-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>EduPeak — Premier Coaching Institute</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="edupeak-style.css">
 </head>
 <body>
 
 <!-- POPUP -->
 <div class="popup-overlay" id="popup">
-  <div class="popup-box">
-    <div class="popup-icon">⚠️</div>
-    <h2>THIS IS AN EXAMPLE WEBSITE</h2>
-    <p>ALL INFORMATION ON THIS SITE IS NOT REAL.<br>This is a demo/portfolio project only.</p>
-    <button class="popup-btn" onclick="closePopup()">Got It!</button>
-  </div>
+    <div class="popup-box">
+        <div class="popup-icon">⚠️</div>
+        <h2>THIS IS AN EXAMPLE WEBSITE</h2>
+        <p>ALL INFORMATION ON THIS SITE IS NOT REAL.<br>This is a demo/portfolio project only.</p>
+        <button class="popup-btn" onclick="closePopup()">Got It!</button>
+    </div>
 </div>
 
 <!-- NAVBAR -->
 <nav>
-  <div class="nav-logo">Edu<span>Peak</span></div>
-  <ul class="nav-links">
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#courses">Courses</a></li>
-    <li><a href="#results">Results</a></li>
-    <li><a href="#faculty">Faculty</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#contact" class="nav-btn">Enroll Now</a></li>
-  </ul>
+    <div class="nav-logo">Edu<span>Peak</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-btn">Enroll Now</a></li>
+    </ul>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-bg-grid"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-content">
-    <div class="hero-badge">🏆 India's Most Trusted Coaching — Since 2008</div>
-    <h1 class="hero-heading">Where <span>Toppers</span><br>Are Made</h1>
-    <p class="hero-desc">From JEE to NEET, from Board Exams to Olympiads — EduPeak has guided over 15,000 students to their dream colleges with India's finest faculty and proven methodology.</p>
-    <div class="hero-btns">
-      <a href="#contact" class="btn-primary">Start Your Journey</a>
-      <a href="#results" class="btn-ghost">See Our Results →</a>
+    <div class="hero-content">
+        <div class="hero-badge">🏆 India's Most Trusted Coaching — Since 2008</div>
+        <h1 class="hero-heading">Where <span>Toppers</span><br>Are Made</h1>
+        <p class="hero-desc">From JEE to NEET, from Board Exams to Olympiads — EduPeak has guided over 15,000 students to their dream colleges with India's finest faculty and proven methodology.</p>
+        <div class="hero-btns">
+            <a href="#contact" class="btn-primary">Start Your Journey</a>
+            <a href="#results" class="btn-ghost">See Our Results →</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-num">15k<span>+</span></div>
+                <div class="stat-label">Students Enrolled</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">98<span>%</span></div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">16<span>+</span></div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">200<span>+</span></div>
+                <div class="stat-label">IIT/AIIMS Selections</div>
+            </div>
+        </div>
     </div>
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-num">15k<span>+</span></div>
-        <div class="stat-label">Students Enrolled</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <div class="stat-num">98<span>%</span></div>
-        <div class="stat-label">Success Rate</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <div class="stat-num">16<span>+</span></div>
-        <div class="stat-label">Years Experience</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <div class="stat-num">200<span>+</span></div>
-        <div class="stat-label">IIT/AIIMS Selections</div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- COURSES -->
 <section id="courses">
-  <div class="section-label">WHAT WE TEACH</div>
-  <h2 class="section-heading">Our <span>Courses</span></h2>
-  <p class="section-sub">Expert-crafted programs for every competitive exam — taught by IITians and doctors who've been there.</p>
-  <div class="courses-grid">
-    <div class="course-card featured">
-      <div class="course-tag">Most Popular</div>
-      <div class="course-icon">⚗️</div>
-      <h3>JEE Main & Advanced</h3>
-      <p>Comprehensive 2-year program covering Physics, Chemistry & Math with daily practice tests and doubt sessions.</p>
-      <div class="course-meta">
-        <span>📅 2 Year Program</span>
-        <span>👨‍🏫 IITian Faculty</span>
-      </div>
-      <a href="#contact" class="course-btn">Know More →</a>
+    <div class="section-label">WHAT WE TEACH</div>
+    <h2 class="section-heading">Our <span>Courses</span></h2>
+    <p class="section-sub">Expert-crafted programs for every competitive exam — taught by IITians and doctors who've been there.</p>
+    <div class="courses-grid">
+        <div class="course-card featured">
+            <div class="course-icon">⚗️</div>
+            <h3>JEE Main & Advanced</h3>
+            <p>Comprehensive 2-year program covering Physics, Chemistry & Math with daily practice tests and doubt sessions.</p>
+            <div class="course-meta">
+                <span>📅 2 Year Program</span>
+                <span>👨‍🏫 IITian Faculty</span>
+            </div>
+            <a href="#contact" class="course-btn">Know More →</a>
+        </div>
+        <div class="course-card">
+            <div class="course-icon">🧬</div>
+            <h3>NEET UG</h3>
+            <p>Biology-focused coaching with AIIMS toppers. Weekly mock tests, revision sessions, and personal mentoring.</p>
+            <div class="course-meta">
+                <span>📅 1-2 Year</span>
+                <span>👨‍⚕️ AIIMS Faculty</span>
+            </div>
+            <a href="#contact" class="course-btn">Know More →</a>
+        </div>
+        <div class="course-card">
+            <div class="course-icon">📚</div>
+            <h3>Class 10 & 12 Boards</h3>
+            <p>Score 95%+ with our structured board exam preparation. All subjects covered with NCERT mastery focus.</p>
+            <div class="course-meta">
+                <span>📅 1 Year</span>
+                <span>🎯 All Subjects</span>
+            </div>
+            <a href="#contact" class="course-btn">Know More →</a>
+        </div>
+        <div class="course-card">
+            <div class="course-icon">🏅</div>
+            <h3>Olympiad Training</h3>
+            <p>Advanced problem-solving for Math, Science & Reasoning Olympiads. Build a standout profile for top colleges.</p>
+            <div class="course-meta">
+                <span>📅 6 Months</span>
+                <span>🌟 Advanced Level</span>
+            </div>
+            <a href="#contact" class="course-btn">Know More →</a>
+        </div>
     </div>
-    <div class="course-card">
-      <div class="course-icon">🧬</div>
-      <h3>NEET UG</h3>
-      <p>Biology-focused coaching with AIIMS toppers. Weekly mock tests, revision sessions, and personal mentoring.</p>
-      <div class="course-meta">
-        <span>📅 1-2 Year</span>
-        <span>👨‍⚕️ AIIMS Faculty</span>
-      </div>
-      <a href="#contact" class="course-btn">Know More →</a>
-    </div>
-    <div class="course-card">
-      <div class="course-icon">📚</div>
-      <h3>Class 10 & 12 Boards</h3>
-      <p>Score 95%+ with our structured board exam preparation. All subjects covered with NCERT mastery focus.</p>
-      <div class="course-meta">
-        <span>📅 1 Year</span>
-        <span>🎯 All Subjects</span>
-      </div>
-      <a href="#contact" class="course-btn">Know More →</a>
-    </div>
-    <div class="course-card">
-      <div class="course-icon">🏅</div>
-      <h3>Olympiad Training</h3>
-      <p>Advanced problem-solving for Math, Science & Reasoning Olympiads. Build a standout profile for top colleges.</p>
-      <div class="course-meta">
-        <span>📅 6 Months</span>
-        <span>🌟 Advanced Level</span>
-      </div>
-      <a href="#contact" class="course-btn">Know More →</a>
-    </div>
-  </div>
 </section>
 
 <!-- RESULTS -->
 <section id="results">
-  <div class="results-inner">
-    <div class="section-label" style="text-align:left;">OUR TRACK RECORD</div>
-    <h2 class="section-heading" style="text-align:left;">Results That <span>Speak</span></h2>
-    <p class="section-sub" style="text-align:left; max-width:500px;">Numbers don't lie. Our students consistently outperform national averages and make it to India's top institutions.</p>
+    <div class="section-label">OUR TRACK RECORD</div>
+    <h2 class="section-heading">Results That <span>Speak</span></h2>
+    <p class="section-sub">Numbers don't lie. Our students consistently outperform national averages and make it to India's top institutions.</p>
     <div class="results-grid">
-      <div class="result-card">
-        <div class="result-num">247</div>
-        <div class="result-label">IIT Selections in 2024</div>
-      </div>
-      <div class="result-card">
-        <div class="result-num">183</div>
-        <div class="result-label">NEET Qualifiers in 2024</div>
-      </div>
-      <div class="result-card">
-        <div class="result-num">412</div>
-        <div class="result-label">Students scored 90%+ in Boards</div>
-      </div>
-      <div class="result-card">
-        <div class="result-num">#1</div>
-        <div class="result-label">Ranked in City for JEE Results</div>
-      </div>
+        <div class="result-card">
+            <div class="result-num">247</div>
+            <div class="result-label">IIT Selections in 2024</div>
+        </div>
+        <div class="result-card">
+            <div class="result-num">183</div>
+            <div class="result-label">NEET Qualifiers in 2024</div>
+        </div>
+        <div class="result-card">
+            <div class="result-num">412</div>
+            <div class="result-label">Students scored 90%+ in Boards</div>
+        </div>
+        <div class="result-card">
+            <div class="result-num">#1</div>
+            <div class="result-label">Ranked in City for JEE Results</div>
+        </div>
     </div>
     <div class="toppers-row">
-      <div class="topper-card">
-        <div class="topper-avatar">👦</div>
-        <div class="topper-name">Aryan Mehta</div>
-        <div class="topper-score">AIR 47 — JEE Advanced 2024</div>
-      </div>
-      <div class="topper-card">
-        <div class="topper-avatar">👧</div>
-        <div class="topper-name">Priya Singh</div>
-        <div class="topper-score">AIR 112 — NEET 2024</div>
-      </div>
-      <div class="topper-card">
-        <div class="topper-avatar">👦</div>
-        <div class="topper-name">Rohit Sharma</div>
-        <div class="topper-score">99.8% — Class 12 Boards</div>
-      </div>
+        <div class="topper-card">
+            <div class="topper-avatar">👦</div>
+            <div>
+                <div class="topper-name">Aryan Mehta</div>
+                <div class="topper-score">AIR 47 — JEE Advanced 2024</div>
+            </div>
+        </div>
+        <div class="topper-card">
+            <div class="topper-avatar">👧</div>
+            <div>
+                <div class="topper-name">Priya Singh</div>
+                <div class="topper-score">AIR 112 — NEET 2024</div>
+            </div>
+        </div>
+        <div class="topper-card">
+            <div class="topper-avatar">👦</div>
+            <div>
+                <div class="topper-name">Rohit Sharma</div>
+                <div class="topper-score">99.8% — Class 12 Boards</div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- FACULTY -->
 <section id="faculty">
-  <div class="section-label">WHO TEACHES YOU</div>
-  <h2 class="section-heading">World-Class <span>Faculty</span></h2>
-  <p class="section-sub">Our teachers are not just educators — they're achievers who've cracked the same exams your child is preparing for.</p>
-  <div class="faculty-grid">
-    <div class="faculty-card">
-      <div class="faculty-avatar">👨‍🔬</div>
-      <h3>Dr. Vikram Nair</h3>
-      <div class="faculty-title">Physics — IIT Bombay Alumni</div>
-      <p>15 years of teaching JEE Physics. Known for making complex concepts crystal clear.</p>
+    <div class="section-label">WHO TEACHES YOU</div>
+    <h2 class="section-heading">World-Class <span>Faculty</span></h2>
+    <p class="section-sub">Our teachers are not just educators — they're achievers who've cracked the same exams your child is preparing for.</p>
+    <div class="faculty-grid">
+        <div class="faculty-card">
+            <div class="faculty-avatar">👨‍🔬</div>
+            <h3>Dr. Vikram Nair</h3>
+            <div class="faculty-title">Physics — IIT Bombay Alumni</div>
+            <p>15 years of teaching JEE Physics. Known for making complex concepts crystal clear.</p>
+        </div>
+        <div class="faculty-card">
+            <div class="faculty-avatar">👩‍🔬</div>
+            <h3>Dr. Meena Joshi</h3>
+            <div class="faculty-title">Biology — AIIMS Delhi Alumni</div>
+            <p>NEET specialist with a 96% success rate. Authored 3 books on NCERT Biology mastery.</p>
+        </div>
+        <div class="faculty-card">
+            <div class="faculty-avatar">👨‍💻</div>
+            <h3>Prof. Anil Kumar</h3>
+            <div class="faculty-title">Mathematics — IIT Delhi Alumni</div>
+            <p>Olympiad gold medalist. Makes advanced math approachable for every student.</p>
+        </div>
     </div>
-    <div class="faculty-card">
-      <div class="faculty-avatar">👩‍🔬</div>
-      <h3>Dr. Meena Joshi</h3>
-      <div class="faculty-title">Biology — AIIMS Delhi Alumni</div>
-      <p>NEET specialist with a 96% success rate. Authored 3 books on NCERT Biology mastery.</p>
-    </div>
-    <div class="faculty-card">
-      <div class="faculty-avatar">👨‍💻</div>
-      <h3>Prof. Anil Kumar</h3>
-      <div class="faculty-title">Mathematics — IIT Delhi Alumni</div>
-      <p>Olympiad gold medalist. Makes advanced math approachable for every student.</p>
-    </div>
-  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="contact-inner">
-    <div class="section-label">GET IN TOUCH</div>
-    <h2 class="section-heading">Enroll Your <span>Child Today</span></h2>
-    <p class="section-sub">Limited seats available for 2025 batch. Book a free counselling session now.</p>
-    <div class="contact-grid">
-      <div class="contact-card">
-        <div class="contact-icon">📍</div>
-        <h4>Address</h4>
-        <p>123 Example Street, City, State</p>
-      </div>
-      <div class="contact-card">
-        <div class="contact-icon">📞</div>
-        <h4>Phone</h4>
-        <p>+91 00000 00000 (Example)</p>
-      </div>
-      <div class="contact-card">
-        <div class="contact-icon">✉️</div>
-        <h4>Email</h4>
-        <p>info@edupeak.in (Example)</p>
-      </div>
-      <div class="contact-card">
-        <div class="contact-icon">🕐</div>
-        <h4>Office Hours</h4>
-        <p>Mon–Sat: 9am – 6pm</p>
-      </div>
+    <div class="contact-inner">
+        <div class="section-label">GET IN TOUCH</div>
+        <h2 class="section-heading">Enroll Your <span>Child Today</span></h2>
+        <p class="section-sub">Limited seats available for 2025 batch. Book a free counselling session now.</p>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h4>ADDRESS</h4>
+                <p>123 Example Street, City, State</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h4>PHONE</h4>
+                <p>+91 00000 00000 (Example)</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <h4>EMAIL</h4>
+                <p>info@edupeak.in (Example)</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">🕐</div>
+                <h4>OFFICE HOURS</h4>
+                <p>Mon–Sat: 9am – 6pm</p>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <a href="#" class="contact-btn">📞 Book Free Counselling</a>
+        </div>
     </div>
-    <a href="#" class="contact-btn">📞 Book Free Counselling</a>
-  </div>
 </section>
 
 <footer>
-  <p>© 2025 EduPeak Coaching Institute. Example website — all info is fictional. | Built by <a href="https://arjoonarora.github.io/portfolio" target="_blank">Arjoon Arora</a></p>
+    <p>© 2025 EduPeak Coaching Institute. Example website — all info is fictional. | Built by <a href="https://arjoonarora.github.io/portfolio" target="_blank">Arjoon Arora</a></p>
 </footer>
 
 <script src="edupeak-script.js"></script>
